@@ -1,0 +1,17 @@
+{
+  "name": "swishio-gameflow-chart",
+  "version": "0.0.1",
+  "description": "Gameflow Chart",
+  "main": "index.ios.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlwaysBCoding/swishio-gameflow-chart.git"
+  },
+  "author": "Jordan Leigh <AlwaysBCoding@gmail.com> (https://github.com/AlwaysBCoding)",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
