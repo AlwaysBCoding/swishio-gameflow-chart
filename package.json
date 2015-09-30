@@ -13,5 +13,6 @@
   "author": "Jordan Leigh <AlwaysBCoding@gmail.com> (https://github.com/AlwaysBCoding)",
   "license": "ISC",
   "dependencies": {
+    "underscore": "^1.8.3"
   }
 }

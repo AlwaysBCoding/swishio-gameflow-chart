@@ -5,6 +5,7 @@ var PropTypes = require('ReactPropTypes')
 var ReactNativeViewAttributes = require('ReactNativeViewAttributes')
 var createReactNativeComponentClass = require('createReactNativeComponentClass')
 var NativeMethodsMixin = require('NativeMethodsMixin')
+var _ = require("underscore")
 
 var { View, requireNativeComponent, PropTypes, NativeModules } = React
 
