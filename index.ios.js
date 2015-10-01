@@ -45,15 +45,6 @@ var Chart = React.createClass({
     }
   },
 
-  componentWillReceiveProps(nextProps) {
-    if(nextProps.chartPoints != []) {
-      var cleanedPoints = this._dataCoordinateCleanup(nextProps.chartPoints)
-      this.setState({
-        chartPoints: cleanedPoints
-      })
-    }
-  },
-
   setNativeProps(props) {
     this.refs[CHART_REF].setNativeProps(props)
   },
@@ -101,6 +92,15 @@ var Chart = React.createClass({
     cleanedYCoords.push(yCoords[yCoords.length - 1])
 
     return {xCoords: cleanedXCoords, yCoords: cleanedYCoords}
+  },
+
+  componentDidMount: function() {
+    if(this.props.chartPoints != []) {
+      var cleanedPoints = this._dataCoordinateCleanup(this.props.chartPoints)
+      this.setState({
+        chartPoints: cleanedPoints
+      })
+    }
   },
 
   render() {
